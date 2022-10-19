@@ -1,0 +1,218 @@
+.App {
+  height: 100%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header-container {
+  width: 100%;
+  background-color: rgb(7, 7, 7);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 3rem;
+}
+
+.header-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  /* text-transform: uppercase; */
+}
+
+.header-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header-edit {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.header-preview {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.header-btn {
+  border: none;
+  padding: 10px;
+  filter: brightness(80%);
+  font-family: "Roboto Flex";
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 110px;
+}
+
+.header-btn:hover {
+  border: 1px solid green;
+  cursor: pointer;
+}
+
+.active {
+  filter: brightness(100%);
+  color: green;
+}
+
+.application-container {
+  background-color: rgb(197, 197, 197);
+  max-width: 800px;
+  width: 80%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 3rem;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+  font-family: "Roboto Flex";
+}
+
+.input-bar {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: "Roboto";
+  border-radius: 3px;
+  border: none;
+}
+
+.input-bar:focus {
+  outline: 1px solid gray;
+}
+
+.section {
+}
+
+.add-remove-btn {
+  width: 100%;
+}
+
+.added-section {
+  margin-bottom: 1rem;
+}
+
+.data-container {
+  font-family: "Montserrat";
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.data-field {
+  font-weight: 700;
+}
+
+.date-input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.date-input-label {
+  font-family: "Roboto";
+  font-weight: 700;
+  width: 50px;
+}
+
+.date-input-label-education {
+  font-family: "Roboto";
+  font-weight: 700;
+  width: 20%;
+}
+
+/* .education-data-delete-btn {
+  height: 100%;
+} */
+
+.data-delete-img {
+  /* width: 45px; */
+  height: 50px;
+}
+
+.data-delete-img:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.profile-image-container-inputs {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image-pre-display {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 1rem;
+}
+
+.preview-resume-container {
+  background-color: rgb(255, 255, 255);
+  max-width: 800px;
+  width: 80%;
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.preview-header-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-fullname {
+  font-family: "Lobster";
+  font-size: 3rem;
+}
+
+.profile-img-preview {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.preview-section {
+}
+
+.preview-heading {
+  font-size: 2rem;
+  font-family: "Roboto flex";
+}
+
+.preview-field-container {
+}
+
+.preview-field {
+  font-family: "Roboto";
+}
+
+.school-title {
+  font-size: 1.5rem;
+}
+
+.company-title {
+  font-size: 1.5rem;
+}
