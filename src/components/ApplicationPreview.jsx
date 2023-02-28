@@ -1,7 +1,7 @@
 import defaultProfileImg from "../assets/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpeg";
 
 export default function ApplicationPreview(props) {
-  let { firstName, lastName } = props.generalInfo;
+  let { firstName, lastName, email, phoneNumber } = props.generalInfo;
 
   function displayEducationInfo() {
     if (props.education.length === 0) {
@@ -40,6 +40,10 @@ export default function ApplicationPreview(props) {
         </div>
       );
     });
+  }
+
+  function displayContactInfo() {
+    return;
   }
 
   function displayExperienceInfo() {
@@ -109,6 +113,14 @@ export default function ApplicationPreview(props) {
         <h3 className="preview-heading">Experience</h3>
         <hr />
         {displayExperienceInfo()}
+      </section>
+      <section className="preview-section">
+        <h3 className="preview-heading">Contact</h3>
+        <hr />
+        <p className="preview-field">{email ? `${email}` : "Email"}</p>
+        <p className="preview-field">
+          {phoneNumber ? `${phoneNumber}` : "Phone Number"}
+        </p>
       </section>
     </div>
   );
